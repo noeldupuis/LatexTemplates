@@ -9,6 +9,15 @@
 \definecolor{light-gray}{gray}{0.95}
 \usepackage{tcolorbox}
 
+\newcommand{\theorem}[1] {
+\begin{wrapfigure}{r}{\linewidth}  
+\begin{minipage}[t]{\linewidth} 
+\begin{tcolorbox}[colback=gray!5,colframe=green!40!black,title=In short]
+#1
+\end{tcolorbox} 
+\end{minipage}  
+\end{wrapfigure}
+}
 
 \begin{document}
 \maketitle
@@ -17,11 +26,5 @@
 
 \boxput*(-1,1){\shifttext{30px}{\ovalbox{Théorème}}}{\shifttext{-30px}{\noindent\ovalbox{\parbox{\linewidth-2\fboxrule-2\fboxsep}{bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla }}}}
 
-\begin{wrapfigure}{r}{\linewidth}  
-\begin{minipage}[t]{\linewidth} 
-\begin{tcolorbox}[colback=gray!5,colframe=green!40!black,title=In short]
-Example text ... blabla  la bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bl       bla
-\end{tcolorbox} 
-\end{minipage}  
-\end{wrapfigure}
+\theorem{bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla }
 \end{document}
