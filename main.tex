@@ -9,20 +9,6 @@
 \definecolor{light-gray}{gray}{0.95}
 \usepackage{tcolorbox}
 
-\newcounter{thetheorem}
-\stepcounter{thetheorem}
-
-\newcommand{\theorem}[1] {
-\begin{wrapfigure}{r}{\linewidth}  
-\begin{minipage}[t]{\linewidth} 
-\begin{tcolorbox}[colback=gray!5,colframe=green!40!black,title=Theoreme \arabic{thetheorem}]
-#1
-\end{tcolorbox} 
-\end{minipage}  
-\end{wrapfigure}
-\stepcounter{thetheorem}
-}
-
 \begin{document}
 \maketitle
 
