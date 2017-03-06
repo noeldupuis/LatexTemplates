@@ -9,14 +9,16 @@
 \definecolor{light-gray}{gray}{0.95}
 \usepackage{tcolorbox}
 
+\newcounter{ntheorem}
 \newcommand{\theorem}[1] {
 \begin{wrapfigure}{r}{\linewidth}  
 \begin{minipage}[t]{\linewidth} 
-\begin{tcolorbox}[colback=gray!5,colframe=green!40!black,title=In short]
+\begin{tcolorbox}[colback=gray!5,colframe=green!40!black,title=Théorème \value{ntheorem}]
 #1
 \end{tcolorbox} 
 \end{minipage}  
 \end{wrapfigure}
+\stepcounter{ntheorem}
 }
 
 \begin{document}
